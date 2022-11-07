@@ -823,8 +823,18 @@ img {
 
 .form-input:hover,
 .form-input:active {
+    border-color: var(--accent-color);
+}
+
+.form-input:hover .form-image:hover
+.form-input:active > .form-image {
     fill: var(--accent-color);
 }
+
+.form-label:focus-within > .form-input {
+    fill: var(--accent-color);
+}
+
 
 .textarea {
     display: block;
@@ -869,5 +879,4 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
