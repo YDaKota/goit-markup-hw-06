@@ -498,6 +498,12 @@ img {
     margin-bottom: 9px;
 }
 
+.address:hover,
+.address:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .address-contacts {
     margin-bottom: 9px;
 }
@@ -507,6 +513,12 @@ img {
     font-style: normal;
     text-decoration: none;
     line-height: 1.71;
+}
+
+.adress-contacts-link:hover,
+.adress-contacts-link:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join {
@@ -607,7 +619,7 @@ img {
     border: none;
     padding: 6px 22px;
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .button-menu:hover, 
@@ -615,6 +627,9 @@ img {
     background-color: var(--accent-color);
     color: #fff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards {
@@ -642,6 +657,7 @@ img {
 .project-link:focus,
 .project-link:active {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:nth-last-child(-n + 3) {
@@ -686,8 +702,7 @@ img {
     top: 0;
     left: 0;
     padding: 63px 24px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); *
-    opacity: 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .overlay-text {
